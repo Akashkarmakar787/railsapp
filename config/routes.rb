@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
 
 root   'welcome#home'
-get 'welcome/about', to: 'welcome#about'
 get 'homepage', to: 'homepage#hp'
+resources :articles
 end
