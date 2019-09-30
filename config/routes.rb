@@ -5,4 +5,8 @@ Rails.application.routes.draw do
 root   'welcome#home'
 get 'homepage', to: 'homepage#hp'
 resources :articles
+
+get 'signup', to: 'users#new'
+resources :users, except: [:new]
+
 end
